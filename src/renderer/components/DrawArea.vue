@@ -1,6 +1,6 @@
 <template>
 	<div>
-		cizim alanı componenti - ata
+		cizim alanı componenti - ata.
 	</div>
 </template>
 
