@@ -5,9 +5,9 @@
 		</router-link>
 		<span class="menu-icons mdi mdi-tune-variant mdi-36px" />
 		<div class="menu">
-			<span class="menu-icons mdi mdi-fire mdi-36px"></span>
+			<span class="menu-icons mdi mdi-fire mdi-36px" @click="trendArea"></span>
 			<span class="menu-icons mdi mdi-view-grid-outline mdi-36px"></span>
-			<span class="menu-icons mdi mdi-square-edit-outline mdi-36px"></span>
+			<span class="menu-icons mdi mdi-square-edit-outline mdi-36px" @click="drawArea"></span>
 			<span class="menu-icons mdi mdi-plus-box-outline mdi-36px"></span>
 			<input
 				type="file"
@@ -21,7 +21,7 @@
 				@click="$refs.imageInput.click()"
 			/>
 		</div>
-		<span class="menu-icons mdi mdi-account mdi-36px"></span>
+		<span class="menu-icons mdi mdi-account mdi-36px" @click="userSettings"></span>
   </div>
 </template>
 
@@ -44,6 +44,15 @@ export default {
       } catch (error) {
         console.log(error)
       }
+    },
+    trendArea () {
+      console.info('Trend Area')
+    },
+    drawArea () {
+      console.info('Draw Area')
+    },
+    userSettings () {
+      console.info('User Settings')
     }
   }
 }
