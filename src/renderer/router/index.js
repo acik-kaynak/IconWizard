@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '../views/home-page'
 import IconDetail from '../views/icon-detail'
-import DrawArea from '../components/DrawArea.vue'
-import DragFile from '../components/DragFile.vue'
+import DrawArea from '../views/draw-area'
+import DragFile from '../views/drag-file'
 
 Vue.use(Router)
 
